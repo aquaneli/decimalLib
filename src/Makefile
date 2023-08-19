@@ -3,7 +3,7 @@ GCOVFLAGS = -fprofile-arcs -ftest-coverage
 
 OS = $(shell uname)
 ifeq ($(OS), Linux)
-	CHECK_FLAGS = -lpthread -lcheck -pthread -lrt -lm 
+	CHECK_FLAGS = -lpthread -lcheck -pthread -lrt -lm -lsubunit
 else
 	CHECK_FLAGS = -lcheck
 endif
